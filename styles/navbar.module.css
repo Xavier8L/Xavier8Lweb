@@ -1,13 +1,15 @@
 .navbar {
-    background-color: #1781B5;
+    background-color: #6B7C95;
+    display: inline-flex; 
     overflow: hidden;
     border-radius: 2rem;
-    margin: 2rem;
     overflow: hidden;
+    padding: 0.3rem 0;
   }
   
   .navbarContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; 
     max-width: 960px; 
     margin: 0 auto;
@@ -16,7 +18,7 @@
   .navbar a {
     float: left;
     display: block;
-    color: #F9F2E0;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -25,11 +27,12 @@
   }
   
   .navbar a:hover {
-    background-color: #30B9FC;
+    border-radius: 2rem;
+    background-color: #1781B5;
     color: white;
   }
   
   .navbar a.active {
-    background-color: #05618f;
+    background-color: #1781B5;
     color: white;
   }

@@ -1,0 +1,35 @@
+.sideNavbar {
+  position: fixed;
+  top: 50%;
+  left: 88%;
+  transform: translateY(-50%);
+  background-color: #6B7C95;
+  padding: 20px;
+  border-radius: 2rem;
+  z-index: 1000;
+}
+
+.sideNavbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideNavbar li {
+  margin-bottom: 10px;
+}
+
+.sideNavbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sideNavbar a:hover,
+.sideNavbar .active a {
+  color: #00bcd4;
+}
+
+.sideNavbar .active {
+  font-weight: bold;
+}

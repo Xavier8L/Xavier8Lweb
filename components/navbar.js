@@ -20,6 +20,7 @@ export default function navbar() {
                     Persoon gegevens
                 </a>
         </div>
+        
     </nav>
   );
 }

@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
       <header className={Styles.header}>
         {home ? (
           <>
-            <Navbar />
+            {/* <Navbar /> */}
             <SideNavbar />
           </>
         ) : (

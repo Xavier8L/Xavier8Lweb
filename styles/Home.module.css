@@ -1,12 +1,33 @@
 .container
 {
-    color: #F9F2E0;
+    color: black;
 }
 
 .block
 {
     width: 90%;
     height: 50rem;
-    background-color: #1781B5;
     margin: 5rem;
+    border-radius: 103;
 }
+
+.title
+{
+    font-size: 32px;
+
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .block {
+      width: 100%;
+      height: auto; /* Adjust height to fit content */
+      margin: 2rem auto; /* Adjust margin for smaller screens */
+      border-radius: 1rem; /* Adjust border-radius for smaller screens */
+      padding: 1rem; /* Add padding for better spacing */
+    }
+  
+    .title {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  }

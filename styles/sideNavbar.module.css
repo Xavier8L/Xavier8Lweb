@@ -33,3 +33,28 @@
 .sideNavbar .active {
   font-weight: bold;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .sideNavbar {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 2rem 2rem 0 0;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sideNavbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;          
+  }
+
+  .sideNavbar li {
+    margin-bottom: 0;
+  }
+}

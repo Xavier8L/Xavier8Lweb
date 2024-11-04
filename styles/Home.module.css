@@ -13,21 +13,41 @@
 
 .title
 {
-    font-size: 32px;
-
+    font-size: 64px;
+    color: #6B7C95;
+    text-transform: uppercase;        
+    position: relative; 
 }
 
-/* Media query for mobile devices */
+/* onderline */
+.title::after
+{
+  content: "";                      
+  display: block;                
+  width: 80%;                       
+  height: 2px;                      
+  margin:  auto 0;  
+  background-color: #6B7C95;              
+  position: absolute;                           
+  bottom: -5px;     
+}
+
+
 @media (max-width: 768px) {
     .block {
       width: 100%;
-      height: auto; /* Adjust height to fit content */
-      margin: 2rem auto; /* Adjust margin for smaller screens */
-      border-radius: 1rem; /* Adjust border-radius for smaller screens */
-      padding: 1rem; /* Add padding for better spacing */
+      height: auto; 
+      margin: 2rem auto; 
+      border-radius: 1rem; 
+      padding: 1rem; 
     }
   
     .title {
-      font-size: 24px; /* Adjust font size for smaller screens */
+      font-size: 24px; 
+    }
+
+    .image{
+      width: 300rem;
+      height: 300rem;
     }
   }

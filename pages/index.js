@@ -21,7 +21,11 @@ export default function Home() {
           {sections.map((section) => (
             <section className={Styles.block} id={section.id} key={section.id}>
               {section.pagina ? (
-                <section.pagina />  
+                <>
+                <h1 className={Styles.title}>{section.title}</h1>
+                <br></br>
+                <section.pagina />
+                </>  
               ) : (
                 <h1 className={Styles.title}>{section.title}</h1>
               )}

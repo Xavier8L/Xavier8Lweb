@@ -1,6 +1,7 @@
 .container
 {
     display:flex;
+    height: 200rem;
 }
 
 .profielTitle{
@@ -24,16 +25,12 @@
 
 @media (max-width: 768px) {
 
-    .container
+    .container  
     {
         display:flex;
         flex-wrap: wrap;
     }
 
-    .image {    
-      margin-left: 10%;
-     
-    }
 
     .profielTitle{
         color: #00639c; 

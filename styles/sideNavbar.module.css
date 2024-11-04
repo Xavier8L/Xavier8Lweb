@@ -53,8 +53,11 @@
     justify-content: space-around;
     width: 100%;          
   }
-
+  .sideNavbar a:focus {
+    outline: none;
+  }
   .sideNavbar li {
     margin-bottom: 0;
   }
+
 }

@@ -1,49 +1,46 @@
 .container
 {
     display:flex;
-    height: 200rem;
+    flex-wrap: wrap;
 }
 
 .profielTitle{
     color: #00639c; 
-    font-size: 32px;                  
-    width: auto;            
-    margin-left:  10rem;  
-    max-width: 400px;
-    font-weight:500;    
+    font-size: 32px;    
+    font-weight:500;  
+    margin-top: 2rem;   
   
   }
 
 .profielText{
   color: #6B7C95;
-  font-size: 16px;           
-  width: auto;           
-  margin-top: 2rem;     
-  max-width: 300px;
+  font-size: 16px;             
+}
 
+.bold{
+  font-weight:600;
+  color: #00639c; 
+  font-size: 16px; 
+  margin-top: 1rem;     
 }
 
 @media (max-width: 768px) {
 
     .container  
     {
-        display:flex;
-        flex-wrap: wrap;
+      display:flex;
+      flex-wrap: wrap;
     }
 
 
     .profielTitle{
-        color: #00639c; 
-        font-size: 30px;     
-        margin-left: 2rem;
-        margin-top: 2rem; 
-      }
+      color: #00639c; 
+      font-size: 22px;   
+    }
     
     .profielText{
       color: #6B7C95;
-      font-size: 16px;         
-      margin-top: 2rem; 
-    
+      font-size: 14px;   
     }
   
    

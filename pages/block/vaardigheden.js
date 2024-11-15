@@ -22,13 +22,6 @@ export default function Ervaring() {
             <div>- Foto maak voor het eten</div>
           </div>
         </div>
-        <div className={Styles.opleiding}>
-          Opleiding
-          <div className={Styles.buttons}>
-          <button className={Styles.mboBtn}>MBO</button>  
-          <button className={Styles.hboBtn}>HBO</button>
-          </div>
-        </div>
       </div>
     </div>
   );

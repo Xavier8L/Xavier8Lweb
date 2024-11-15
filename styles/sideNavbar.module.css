@@ -7,6 +7,7 @@
   padding: 20px;
   border-radius: 2rem;
   z-index: 1000;
+  width: 9rem;
 }
 
 .sideNavbar ul {
@@ -31,7 +32,7 @@
 }
 
 .sideNavbar .active {
-  font-weight: bold;
+  font-weight: bold;  
 }
 
 /* Media query for mobile devices */

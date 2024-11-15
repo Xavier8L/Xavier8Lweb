@@ -27,7 +27,7 @@ export default function sideNavbar() {
         <a href="#profiel">Profiel</a>
       </li>
       <li className={activeSection === 'ervaring' ? Styles.active : ''}>
-        <a href="#ervaring">Ervaring</a>
+        <a href="#ervaring">Werkervaring</a>
       </li>
       <li className={activeSection === 'vaardigheden' ? Styles.active : ''}>
         <a href="#vaardigheden">Vaardigheden</a>

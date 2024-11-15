@@ -6,10 +6,10 @@ import Ervaring from "./block/ervaring"
 
 const sections = [
   { id: "profiel", title: "Profiel",  pagina: Profiel },
-  { id: "ervaring", title: "Ervaring", pagina:Ervaring },
+  { id: "ervaring", title: "Werkervaring", pagina:Ervaring },
   { id: "vaardigheden", title: "Vaardigheden" },
   { id: "product", title: "Product" },
-  { id: "gegevens", title: "Gegevens" },
+  { id: "contact", title: "Contact" },
 ];
 
 

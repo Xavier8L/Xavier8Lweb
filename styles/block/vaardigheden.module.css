@@ -1,7 +1,7 @@
 .container
 {
     display:flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .profielTitle{
@@ -11,16 +11,6 @@
     margin-top: 2rem;   
   
   }
-
-
-.opleiding{
-  color: #00639c; 
-  font-size: 32px;    
-  font-weight:500;  
-  margin-top: 2rem;   
-  
-}
-
 
 .profielText{
   color: #6B7C95;

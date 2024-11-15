@@ -1,7 +1,6 @@
-import Layout from "../../components/layout";
 import Styles from "../../styles/block/profiel.module.css";
 import Image from "next/image";
-import Link from "next/link";
+
 
 export default function Profiel() {
   return (
@@ -10,7 +9,12 @@ export default function Profiel() {
         <div><Image src="/images/profile.jpg" alt="profile.jpg" width ={300} height={300}  className={Styles.image}/></div>
         <div className={Styles.profielTitle}>
           <div>Hoi, Ik ben Xavier,</div><div>een software developer,</div>  <div>woont in Den Haag.</div>
-          <div className={Styles.profielText}>Ik ben een Hbo-student in Nederland, met ruime ervaring in teamwerk. Ik ben geboren in China en woon al  7 jaar in Nederland. Ik heb een passie voor softwareontwikkeling, ben goed in probleemoplossing en denk graag vanuit verschillende perspectieven om uitdagingen aan te pakken en innovatieve oplossingen te vinden.</div>
+          <div className={Styles.profielText}>
+           <div>Een Hbo-student in haagse hogeschool, met ruime ervaring in teamwerk.</div>
+           <div>Gepassioneerde programmeerstudent met uitstekende creativiteit en verbeeldingskracht en een sterke interesse in softwareontwikkeling.</div>
+           <div>Ik streef ernaar mijn kennis en vaardigheden in te zetten om waarde toe te voegen aan elke organisatie waarmee ik samenwerk.</div>
+          
+          </div>
         </div>
         
       </div>

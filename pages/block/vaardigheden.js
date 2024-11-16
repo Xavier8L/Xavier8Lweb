@@ -1,27 +1,55 @@
-import Styles from "../../styles/block/ervaring.module.css";
+import Styles from "../../styles/block/vaardigheden.module.css";
 
-export default function Ervaring() {
+export default function Vaardigheden() {
+
+  const vaardigheden = [
+    { naam: "PHP & Symfony", niveau: 60 }, 
+    { naam: "HTML & CSS", niveau: 90 },
+    { naam: "Javascript & React", niveau: 80 },
+    { naam: "Java", niveau: 70 },
+    { naam: "C# & .NET", niveau: 70 },
+    { naam: "Python", niveau: 60 },
+    { naam: "SQL", niveau: 80 },
+    { naam: "Azure", niveau: 60 },
+  ];
+
+  const eigenschappen = [
+    { naam: "Soft skills", beschrijven:"Probleemoplossend, Creatief, Teamgericht" },
+    { naam: "Flexibel", beschrijven:"kan snel schakelen tussen verschillende taken of prioriteiten" },
+    { naam: "Verantwoordelijk", beschrijven:"Zorgen dat taken op tijd en correct worden gedaan" },
+    { naam: "Doorzingsvermogen", beschrijven:"Blijf gemotiveerd en geef niet snel op" },
+    { naam: "Chinees (mandarijns) ", beschrijven:"Moedertaal" },
+    { naam: "Nederlands", beschrijven:"B1" },
+    { naam: "Engels", beschrijven:"A2" },
+  ]
+
+ 
+
   return (
-    <div>
-      <div className={Styles.container}>
-        <div className={Styles.profielTitle}>
-          Blazter.nl:(ICT bedrijf) September 2020 – Juli 2021
-          <div className={Styles.bold}>Werkzaamheden: </div>
-          <div className={Styles.profielText}>
-            <div>- Maken van Wordpress plugins met behulp van Jquery, Javascript en PHP</div>
-            <div>- Designs omzetten naar websites met Wordpress, CSS, HTML en Javascript</div>
-            <div>- Aanpassen van website functies op basis van klant feedback</div>
+    <div className={Styles.container}>
+      <div className={Styles.vaardigheden }>
+        <h2 className={Styles.title}>Vaardigheden</h2>
+        {vaardigheden.map((vaardigheid) => (
+          <div className={Styles.vaardigheidBalk }>
+            <div className={Styles.vaardigheidNaam}>{vaardigheid.naam}
+              <div className={Styles.vaardigheidContainer}>
+                <div
+                  className={Styles.vaardigheid}
+                  style={{ width: `${vaardigheid.niveau}%` }} 
+                >
+              </div>
+              </div>    
             </div>
         </div>
-        <div className={Styles.profielTitle}>
-          Smart-think (design bedrijf) Juli 2019 – September 2019
-          <div className={Styles.bold}>Werkzaamheden: </div>
-          <div className={Styles.profielText}>
-            <div>- Menu's, logo's, visitekaartjes en spaarpassen ontwerpen met Photoshop.</div>
-            <div>- Designs omzetten naar websites met Wordpress, CSS, HTML en Javascript</div>
-            <div>- Foto maak voor het eten</div>
-          </div>
-        </div>
+        ))}
+      </div>
+      <div className={Styles.eigenschappen }>
+        <h2 className={Styles.title}>Eigenschappen</h2>
+          {eigenschappen.map((eigenschap)=>(
+            <div className={Styles.eigenschapBalk}>
+              <div className={Styles.eigschap}><span className={Styles.eigenschapNaam}>{eigenschap.naam} </span>: {eigenschap.beschrijven}</div>
+            </div>
+          ))}
       </div>
     </div>
   );

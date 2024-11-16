@@ -4,44 +4,60 @@
     flex-wrap: wrap;
 }
 
-.profielTitle{
-    color: #00639c; 
-    font-size: 32px;    
-    font-weight:500;  
-    margin-top: 2rem;   
-  
-  }
-
-.profielText{
-  color: #6B7C95;
-  font-size: 16px;             
+.title
+{
+  text-decoration: underline;
 }
 
-.bold{
-  font-weight:600;
-  color: #00639c; 
-  font-size: 16px; 
-  margin-top: 1rem;     
+.vaardigheden {
+  width: 30%; 
+  margin-right: 20%;
+}
+
+.vaardigheidBalk {
+
+  box-sizing: border-box;
+}
+
+.vaardigheidNaam {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.vaardigheidContainer {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.vaardigheid {
+  background-color: #6b7c95; /* 条的颜色 */
+  height: 100%;
+  transition: width 0.5s ease-in-out; /* 平滑动画效果 */
+  border-radius: 8px;
+}
+
+.eigenschapBalk{ 
+  margin-top: 1.5rem;
+}
+
+.eigenschap{
+  font-size: 16px;
+}
+
+.eigenschapNaam{
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
 
-    .container  
-    {
-      display:flex;
-      flex-wrap: wrap;
-    }
-
-
-    .profielTitle{
-      color: #00639c; 
-      font-size: 22px;   
-    }
-    
-    .profielText{
-      color: #6B7C95; 
-      font-size: 14px;   
-    }
+  .vaardigheden {
+    width: 100%; 
+    margin-right: 0%;
+  }
+  
   
    
    

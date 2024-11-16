@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Layout from "../components/layout";
 import Styles from "../styles/Home.module.css";
-import Profiel from "./block/profiel"
-import Ervaring from "./block/ervaring"
+import Profiel from "./block/profiel";
+import Ervaring from "./block/ervaring";
+import Vaardigheden from "./block/vaardigheden";
 
 const sections = [
   { id: "profiel", title: "Profiel",  pagina: Profiel },
   { id: "ervaring", title: "Werkervaring", pagina:Ervaring },
-  { id: "vaardigheden", title: "Vaardigheden" },
+  { id: "vaardigheden", title: "Vaardigheden", pagina:Vaardigheden  },
   { id: "product", title: "Product" },
   { id: "contact", title: "Contact" },
 ];

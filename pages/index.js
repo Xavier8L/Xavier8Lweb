@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <div>
       <Layout home={true}>
-        <main className={Styles.container}>
+        <main className={Styles.container}> 
           {sections.map((section) => (
-            <section className={Styles.block} id={section.id} key={section.id}>
+            <section className={ `${Styles.block} ${ section.id === "contact" ? Styles.contact: "" }`} id={section.id} key={section.id}>
               {section.pagina ? (
                 <>
                 <h1 className={Styles.title}>{section.title}</h1>

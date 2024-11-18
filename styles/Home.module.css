@@ -6,9 +6,13 @@
 .block
 {
     width: 90%;
-    min-height: 40rem;
+    min-height: 40em;
     margin: 5rem;
     border-radius: 103;
+}
+
+.contact{
+  height: 50rem;  
 }
 
 .title
@@ -46,5 +50,8 @@
       font-size: 24px; 
     }
 
+    .contact{
+      height: 48rem;  
+   }
    
   }

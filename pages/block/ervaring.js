@@ -5,7 +5,7 @@ export default function Ervaring() {
 
   const opleiding =[
     {niveau:"HBO Bachelor",opleidingNaam:"ICT Software Engineering",Tijd:"01/09/2022 - Heden", School:"HAAGSE HOGESCHOOL",Adres:"Johanna Westerdijkplein - Den Haag" },
-    {niveau:"MBO 4",opleidingNaam:" Aapplicatie en mediaontwikkelaar",Tijd:"02/09/2019 - 30/06/2022", School:"HAAGSE HOGESCHOOL",Adres:"Johanna Westerdijkplein - Den Haag" }
+    {niveau:"MBO 4",opleidingNaam:" Aapplicatie en mediaontwikkelaar",Tijd:"02/09/2019 - 30/06/2022", School:"ROC MONDRIAAN",Adres:"Tinwerf - Den Haag" }
   ]
 
   const [isModalOpen, setIsModalOpen] = useState(false);

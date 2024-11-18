@@ -32,8 +32,8 @@ export default function sideNavbar() {
       <li className={activeSection === 'vaardigheden' ? Styles.active : ''}>
         <a href="#vaardigheden">Vaardigheden</a>
       </li>
-      <li className={activeSection === 'product' ? Styles.active : ''}>
-        <a href="#product">Product</a>
+      <li className={activeSection === 'projecten' ? Styles.active : ''}>
+        <a href="#projecten">Projecten</a>
       </li>
       <li className={activeSection === 'contact' ? Styles.active : ''}>
         <a href="#contact">Contact</a>

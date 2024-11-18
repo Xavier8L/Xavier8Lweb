@@ -1,6 +1,28 @@
 import Styles from "../../styles/block/ervaring.module.css";
+import React, { useState } from "react";
 
 export default function Ervaring() {
+
+  const opleiding =[
+    {niveau:"HBO Bachelor",opleidingNaam:"ICT Software Engineering",Tijd:"01/09/2022 - Heden", School:"HAAGSE HOGESCHOOL",Adres:"Johanna Westerdijkplein - Den Haag" },
+    {niveau:"MBO 4",opleidingNaam:" Aapplicatie en mediaontwikkelaar",Tijd:"02/09/2019 - 30/06/2022", School:"HAAGSE HOGESCHOOL",Adres:"Johanna Westerdijkplein - Den Haag" }
+  ]
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedOpleiding, setSelectedOpleiding] = useState(null);
+
+  const handleClick = (number) => {
+    setSelectedOpleiding(opleiding[number]); 
+    setIsModalOpen(true); 
+  };
+
+  
+  const dichtModal = () => {
+    setIsModalOpen(false);
+    setSelectedOpleiding(null); 
+  };
+
+  
   return (
     <div>
       <div className={Styles.container}>
@@ -25,11 +47,25 @@ export default function Ervaring() {
         <div className={Styles.opleiding}>
           Opleiding
           <div className={Styles.buttons}>
-          <button className={Styles.mboBtn}>MBO</button>  
-          <button className={Styles.hboBtn}>HBO</button>
+          <button className={`${Styles.btn} ${Styles.mboBtn}`} onClick={() => handleClick(1)}>MBO</button>  
+          <button className={`${Styles.btn} ${Styles.hboBtn}`} onClick={() => handleClick(0)}>HBO</button>
           </div>
         </div>
       </div>
+
+
+      {isModalOpen && selectedOpleiding && (
+        <div className={Styles.modal}>
+          <div className={Styles.modalContent}>
+            <h2>{selectedOpleiding.opleidingNaam}</h2>
+            <p><strong>Niveau:</strong> {selectedOpleiding.niveau}</p>
+            <p><strong>Datum:</strong> {selectedOpleiding.Tijd}</p>
+            <p><strong>School:</strong> {selectedOpleiding.School}</p>
+            <p><strong>Adres:</strong> {selectedOpleiding.Adres}</p>
+            <button className={Styles.dichtBtn} onClick={dichtModal}>Dicht</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }   

@@ -62,7 +62,7 @@ export default function Ervaring() {
             <p><strong>Datum:</strong> {selectedOpleiding.Tijd}</p>
             <p><strong>School:</strong> {selectedOpleiding.School}</p>
             <p><strong>Adres:</strong> {selectedOpleiding.Adres}</p>
-            <button className={Styles.dichtBtn} onClick={dichtModal}>Dicht</button>
+            <button className={Styles.dichtBtn} onClick={dichtModal}><strong>X</strong></button>
           </div>
         </div>
       )}

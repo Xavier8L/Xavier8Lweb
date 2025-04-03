@@ -1,0 +1,103 @@
+.todoList {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 60%;
+}
+
+.todoList .todoListLi {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+
+.todoList .todoListLi > .todoListDiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.toggle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #e6e6e6;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:white;
+}
+
+.toggle:checked {
+    border-color: #737373;
+}
+
+.toggle:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #737373;
+    font-size: 14px;
+}
+
+.label {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.destroy, .editBtn {
+    display: none;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #cc9a9a;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease-out;
+}
+
+.destroy:hover, .editBtn:hover, .backBtn:hover {
+    color: #af5b5e;
+}
+
+.todoList .todoListLi:hover .destroy,
+.todoList .todoListLi:hover .editBtn {
+    display: block;
+}
+
+.edit {
+    width: 50%;
+    flex: 1;
+    padding: 4px 6px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.backBtn {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #cc9a9a;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease-out;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #d9d9d9;
+}

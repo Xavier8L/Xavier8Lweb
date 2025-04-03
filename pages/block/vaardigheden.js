@@ -23,14 +23,12 @@ export default function Vaardigheden() {
     { naam: "Engels", beschrijven:"A2" },
   ]
 
- 
-
   return (
     <div className={Styles.container}>
       <div className={Styles.vaardigheden }>
         <h2 className={Styles.title}>Vaardigheden</h2>
-        {vaardigheden.map((vaardigheid) => (
-          <div className={Styles.vaardigheidBalk }>
+        {vaardigheden.map((vaardigheid, index) => (
+          <div key={`vaardigheid-${index}`} className={Styles.vaardigheidBalk }>
             <div className={Styles.vaardigheidNaam}>{vaardigheid.naam}
               <div className={Styles.vaardigheidContainer}>
                 <div
@@ -45,8 +43,8 @@ export default function Vaardigheden() {
       </div>
       <div className={Styles.eigenschappen }>
         <h2 className={Styles.title}>Eigenschappen</h2>
-          {eigenschappen.map((eigenschap)=>(
-            <div className={Styles.eigenschapBalk}>
+          {eigenschappen.map((eigenschap, index) => (
+            <div key={`eigenschap-${index}`} className={Styles.eigenschapBalk}>
               <div className={Styles.eigschap}><span className={Styles.eigenschapNaam}>{eigenschap.naam} </span>: {eigenschap.beschrijven}</div>
             </div>
           ))}

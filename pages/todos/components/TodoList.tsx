@@ -36,7 +36,7 @@ class todoList extends React.Component<Props, State>{
     render(){
         return(
             <ul className={styles.todoList}>
-               {this.props.list.map(todo =>{
+               {this.props.list?.map(todo =>{
                 return(
                     <li key={todo.id} className={styles.todoListLi}>
                     <div className={styles.todoListDiv}>
